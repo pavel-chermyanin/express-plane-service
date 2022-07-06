@@ -1,0 +1,38 @@
+.planesList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: auto;
+}
+.sort{
+    padding: 20px 0;
+    background-color: #442d85;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.planesHeader{
+    justify-content: space-between;
+    align-items: center;
+}
+.sortBtn {
+     font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 22) + 20px);
+}
+.createPlaneBtn{
+    background: linear-gradient(180deg, #fff 0%, #d9dfff 100%);
+    border: .5px solid rgba(255, 255 ,255, .5);
+    box-shadow: 0 1px 3px rgba(0,0,0, .1);
+    border-radius: 20px;
+    color: #000;
+    padding: 8px 12px;
+}
+
+@media(max-width: 470px) {
+    .sort > *{
+        flex-direction: column-reverse;
+    }
+    .createPlaneBtn{
+        margin-bottom: 30px;
+    }
+}

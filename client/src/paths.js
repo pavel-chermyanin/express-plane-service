@@ -1,3 +1,5 @@
 export const paths = {
-    home: '/'
+    home: '/',
+    plane: '/plane',
+    createPlane: '/create-plane'
 }
