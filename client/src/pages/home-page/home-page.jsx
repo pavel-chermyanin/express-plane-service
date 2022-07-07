@@ -3,7 +3,7 @@ import { Header, Planes } from '../../components'
 
 
 
-export const Homepage = () => {
+export const HomePage = () => {
   return (
     <React.Fragment>
       <Header/>

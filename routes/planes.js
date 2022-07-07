@@ -3,11 +3,11 @@ const multer = require('multer');
 const router = express.Router();
 const path = require('path');
 
-const { 
+const {
     getPlanes,
     getPlane,
-     createPlane
-     } = require('../controllers/planes');
+    createPlane
+} = require('../controllers/planes');
 
 
 // показываем, где хранить загружаемые картики
@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
     }
 });
 
-const upload = multer({storage});
+const upload = multer({ storage });
 
 // @route GET /api/planes
 // @desc Получить все самолеты

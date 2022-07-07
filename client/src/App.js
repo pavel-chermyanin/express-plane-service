@@ -1,9 +1,9 @@
 import { Provider } from 'react-redux';
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route} from 'react-router-dom'
 
 
 import { paths } from './paths';
-import { Homepage } from './pages/home-page';
+import { HomePage, PlanePage } from './pages';
 import { store } from './store';
 
 
@@ -13,9 +13,9 @@ function App() {
     <HashRouter>
       <Provider store={store}>
         <Routes>
-          <Route path={paths.home} element={<Homepage />} />
+          <Route path={paths.home} element={<HomePage />} />
+          <Route path={`${paths.plane}/:id`} element={<PlanePage />} />
         </Routes>
-
       </Provider>
     </HashRouter>
   );
